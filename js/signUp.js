@@ -40,7 +40,7 @@ function addNewUser(name, email, password) {
   failedMsg.classList.replace("d-block", "d-none");
 
   setTimeout(() => {
-    window.location.href = "../login.html";
+    window.location.href = "../index.html";
   }, 3000);
 }
 

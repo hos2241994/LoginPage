@@ -6,10 +6,10 @@ if (userName) {
   document.body.classList.remove("d-none");
   homeHeader.innerHTML = `Hello ${userName}`;
 } else {
-  window.location.href = "../login.html";
+  window.location.href = "../index.html";
 }
 
 logOut.addEventListener("click", function () {
   localStorage.removeItem("userName");
-  window.location.href = "../login.html";
+  window.location.href = "../index.html";
 });
