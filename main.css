@@ -1,0 +1,68 @@
+@import url("https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;600&display=swap");
+
+:root {
+  --loginSystem-bgColor: #24353f;
+  --loginSystem-shadow: 3px 2px 40px 3px rgba(0, 0, 0, 1);
+  --header-color: #17a2b8;
+  --loginSystem-fontfamily: "Titillium Web", sans-serif;
+}
+
+body {
+  font-family: var(--loginSystem-fontfamily);
+  font-weight: 400;
+}
+
+.login {
+  min-height: 100vh;
+  background: var(--loginSystem-bgColor);
+}
+
+form,
+.home-header {
+  max-width: 400px;
+  background-color: var(--loginSystem-bgColor);
+  box-shadow: var(--loginSystem-shadow);
+}
+
+form h1,
+.home-header {
+  color: var(--header-color);
+  font-weight: 600;
+  font-size: 45px;
+}
+
+form .btn,
+.nav-link {
+  border: 1px solid var(--header-color);
+  color: var(--header-color);
+}
+
+form .btn:hover,
+.nav-link:hover {
+  background-color: var(--header-color);
+  color: white;
+}
+
+.form-control:focus {
+  border-color: var(--header-color);
+  box-shadow: none;
+}
+
+.login .form-control::placeholder {
+  color: #ced4da;
+}
+
+/********** Home Page ****************/
+.navbar {
+  background-color: var(--loginSystem-bgColor);
+  box-shadow: var(--loginSystem-shadow);
+  color: wheat;
+}
+
+.navbar-toggler:focus {
+  box-shadow: none;
+}
+
+.navbar-toggler i {
+  font-size: 1.5rem;
+}
